@@ -41,9 +41,15 @@
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+		<!--
 		<property name="url" value="jdbc:mysql://localhost:3306/project3?useLegacyDatetimeCode=false&amp;useSSL=false&amp;serverTimezone=UTC"/>
 		<property name="username" value="root" />
 		<property name="password" value="root" />
+		  -->
+		<property value="jdbc:mysql://sql2.freemysqlhosting.net:3306/sql2232636?useLegacyDatetimeCode=false&amp;useSSL=true&amp;serverTimezone=UTC" name="url"/>
+		<property value="sql2232636" name="username"/>
+		<property value="uP5*lD5%" name="password"/>
+
 	</bean>
 	
 </beans>
